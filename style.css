@@ -1,8 +1,10 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -20,10 +22,11 @@ nav a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ddd;
 }
 
 .hero {
@@ -33,11 +36,26 @@ nav a:hover {
     text-align: center;
 }
 
-.product {
-    background: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 20px;
+.product-section {
+    padding: 2em;
     text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -56,9 +74,9 @@ form input, form textarea {
 }
 
 form button {
-    background: #000;
+    background: #444;
     color: #fff;
-    border: 0;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
